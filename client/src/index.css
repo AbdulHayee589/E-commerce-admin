@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+
+html,
+body,
+#root,
+.app{
+  height: 100%;
+  width: 100%;
+  font-family: "Rubik",sans-serif;
+}
+/* dashboard.css */
+.dashboard {
+  display: flex;
+  height: 20vh;
+}
+
+.sidebar {
+  width: 250px;
+  background: #b3b3b3;
+  color: #fff;
+  padding: 20px;
+  height: 100vh;
+}
+
+.sidebar h2 {
+  font-size: 24px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+.gradient-div {
+  background: radial-gradient(circle, #ebebeb, #d3d3d3);
+}
+.shadow {
+  transition: box-shadow 0.3s;
+  box-shadow: 0 0 0 transparent; /* Add a default shadow with no effect */
+}
+
+.shadow:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add box shadow on hover */
+}
+
+.zoom-on-hover:hover {
+  transform: scale(1.05);
+  transition: transform 0.5s ease; /* Adjust the scale factor as needed for the desired zoom effect */
+}
