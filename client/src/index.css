@@ -47,7 +47,9 @@ body,
   padding: 20px;
 }
 .gradient-div {
-  background: radial-gradient(circle, #ebebeb, #d3d3d3);
+  background: radial-gradient(circle at 30% 30%, #ffffff, #778d8c);
+
+
 }
 .shadow {
   transition: box-shadow 0.3s;

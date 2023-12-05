@@ -3,7 +3,7 @@ import Sidebar from "./Sidebar";
 import { Routes, Route, Outlet } from "react-router-dom";
 import Home from "./Home";
 import Analytics from "./Products";
-import Reports from "./Reports";
+import Reports from "./Coupon";
 
 const Dashboard = () => {
   return (

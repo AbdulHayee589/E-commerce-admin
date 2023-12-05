@@ -3,11 +3,14 @@ import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   return (
-    <div className="sidebar gradient-div shadow">
+    <div
+      className="sidebar gradient-div shadow "
+      style={{ fontStyle: "revert-layer" }}
+    >
       <h2>Dashboard</h2>
       <ul>
         <li>
-          <Link to="/dashboard">Home</Link>
+          <Link to="/dashboard ">Home</Link>
         </li>
         <li>
           <Link to="/dashboard/products">Products</Link>

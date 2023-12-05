@@ -16,10 +16,11 @@ import {
   PrintifyAuth,
   getSpecificProduct,
 } from "./controllers/PrintfyRoutes.js";
-
+import { AddCoupon } from "./controllers/Coupon.js";
 //File Handling
 import multer from "multer";
 import { getUsers } from "./controllers/UserRoutes.js";
+
 const upload = multer({ dest: "uploads/" });
 
 //CONFIGURATION
@@ -46,6 +47,9 @@ app.post("/product/edit", upload.array("images", 5), editProduct);
 app.get("/product/printify/auth", PrintifyAuth);
 app.get("/product/printify/add", getPrintifyProduct);
 app.post("/product/printify/getproduct", getSpecificProduct);
+
+//COUPONS
+app.post("/coupon", AddCoupon);
 
 //Routes USERS/users/all
 app.get("/users/all", getUsers);

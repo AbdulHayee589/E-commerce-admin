@@ -9,11 +9,11 @@ import Auth from "./Pages/Login";
 import Dashboard from "./Pages/Dashboard";
 import Home from "./Pages/Home";
 import Products from "./Pages/Products";
-import Reports from "./Pages/Reports";
+import Reports from "./Pages/Coupon";
 import { setProducts, setUsers } from "./state/index";
 import { useDispatch, useSelector } from "react-redux";
 import axios from "axios";
-
+import Coupon from "./Pages/Coupon";
 function App() {
   const isAuth = Boolean(useSelector((state) => state.token));
   console.log({ isAuth });
@@ -44,7 +44,7 @@ function App() {
           >
             <Route index element={<Home />} />
             <Route path="products" element={<Products />} />
-            <Route path="reports" element={<Reports />} />
+            <Route path="reports" element={<Coupon />} />
           </Route>
           <Route path="/*" element={<Navigate to="/dashboard" />} />
         </Routes>
